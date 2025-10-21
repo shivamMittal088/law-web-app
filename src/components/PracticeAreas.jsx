@@ -1,5 +1,6 @@
 import React from "react";
 import { Scale, Shield, Briefcase, Users, Building2, FileText } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const AREAS = [
   {
@@ -60,7 +61,7 @@ const PracticeAreasSection = ()=> {
             >
               <div className="flex items-start gap-3">
                 <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-amber-100 text-amber-700 dark:bg-amber-900/30 dark:text-amber-400">
-                  <Icon size={18} />
+                  <Icon size={20} />
                 </span>
                 <div>
                   <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">
@@ -75,12 +76,12 @@ const PracticeAreasSection = ()=> {
               {/* subtle hover underline */}
               <div className="mt-4 h-px bg-transparent group-hover:bg-amber-400/50 transition-colors" />
               <div className="mt-3">
-                <a
-                  href="#contact"
+                <Link
+                  to="/Form"
                   className="text-[12px] font-medium text-amber-700 dark:text-amber-400 hover:underline"
                 >
                   Schedule a consultation →
-                </a>
+                </Link>
               </div>
             </div>
           ))}
@@ -88,12 +89,12 @@ const PracticeAreasSection = ()=> {
 
         {/* CTA row (compact) */}
         <div className="mt-8 flex items-center justify-center">
-          <a
-            href="#contact"
+          <Link
+            to = "/Form"
             className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold hover:bg-amber-400 transition-colors"
           >
             Discuss Your Matter
-          </a>
+          </Link>
         </div>
       </div>
     </section>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Hero = () => {
   return (
@@ -13,12 +14,12 @@ const Hero = () => {
             {/* Left content */}
             <div className="space-y-5">
               <div className="inline-block">
-                <span className="bg-amber-500 text-slate-900 px-3 py-1.5 rounded-full text-xs font-medium tracking-wide">
+                <span className="bg-amber-500 text-slate-900 px-3 py-1 rounded-full text-xs font-medium tracking-wide">
                   Trusted Legal Experts Since 1985
                 </span>
               </div>
 
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-snug tracking-tight">
+              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold leading-snug tracking-tight">
                 Defending Your Rights with Excellence
               </h2>
 
@@ -28,13 +29,14 @@ const Hero = () => {
               </p>
 
               {/* Buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 pt-2">
-                <button className="bg-amber-500 text-slate-900 px-6 py-2.5 rounded-md text-sm font-medium hover:bg-amber-400 transition-all transform hover:scale-105 shadow-md">
+              <div className="flex flex-col sm:flex-row gap-1">
+                <Link to="/Form">
+                <button 
+                className="bg-amber-500 text-slate-900 px-6 py-2.5 rounded-md text-sm font-medium hover:bg-amber-400 transition-all transform hover:scale-105 shadow-md">
                   Schedule Free Consultation
                 </button>
-                <button className="border border-white text-white px-6 py-2.5 rounded-md text-sm font-medium hover:bg-white hover:text-slate-900 transition-all">
-                  View Practice Areas
-                </button>
+                </Link>
+                
               </div>
 
               {/* Stats */}

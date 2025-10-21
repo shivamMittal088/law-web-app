@@ -1,5 +1,6 @@
 import React from "react";
 import { MapPin, Phone, Mail, Clock, ExternalLink } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const LocationSection = () => {
   const firmName = "Sterling & Associates";
@@ -116,12 +117,12 @@ const LocationSection = () => {
               </ul>
 
               <div className="mt-5 pt-4 border-t border-slate-200 dark:border-slate-800">
-                <a
-                  href="#contact"
+                <Link
+                  to="/Form"
                   className="inline-flex items-center justify-center rounded-md bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold hover:bg-amber-400 transition-colors"
                 >
                   Book Consultation
-                </a>
+                </Link>
               </div>
             </div>
           </div>

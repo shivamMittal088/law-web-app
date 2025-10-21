@@ -1,5 +1,6 @@
 import React from "react";
 import { Quote, Star } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const TESTIMONIALS = [
   {
@@ -100,12 +101,12 @@ const TestimonialsSection = ()=> {
 
         {/* CTA */}
         <div className="mt-8 text-center">
-          <a
-            href="#contact"
+          <Link
+            to="/Form"
             className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold hover:bg-amber-400 transition-colors"
           >
             Book a Free Consultation
-          </a>
+          </Link>
           <p className="mt-3 text-[11px] text-slate-500 dark:text-slate-400">
             * Testimonials reflect client experiences; outcomes vary by case.
           </p>
