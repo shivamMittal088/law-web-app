@@ -62,8 +62,10 @@ const FormPage = () => {
 
     try {
       // Sends the entire <form>, including files, to EmailJS
+      console.log(formRef.current);
       await emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, formRef.current, PUBLIC_KEY);
       setSubmitted(true);
+      
       // Reset form fields
       formRef.current.reset();
       setFileName("");
@@ -87,8 +89,9 @@ const FormPage = () => {
                 <Scale className="text-slate-900" size={24} />
               </span>
               <div>
-                <h1 className="text-lg sm:text-xl font-bold">Sterling & Associates</h1>
-                <p className="text-xs text-slate-500 dark:text-slate-400">Attorneys at Law</p>
+                <h1 className="text-lg sm:text-xl font-bold">Naveen Kumar Garg And Associates</h1>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Advoctes | Solicitors | Legal Consultants</p>
+                <p className="text-xs text-slate-500 dark:text-slate-400">Delhi High Court And All District Courtss</p>
               </div>
             </div>
 
@@ -235,15 +238,15 @@ const FormPage = () => {
                   <li className="flex items-start gap-3">
                     <Phone size={18} className="mt-0.5 text-amber-500" />
                     <div>
-                      <p className="font-medium">(123) 456-7890</p>
+                      <p className="font-medium">8285558855 , 9911198213</p>
                       <p className="text-slate-500 dark:text-slate-400">24/7 for emergencies</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
                     <Mail size={18} className="mt-0.5 text-amber-500" />
                     <div>
-                      <a href="mailto:contact@lawfirm.com" className="font-medium hover:underline">
-                        contact@lawfirm.com
+                      <a href="adv.naveengarg1993@gmail.com" className="font-medium hover:underline">
+                        adv.naveengarg1993@gmail.com
                       </a>
                       <p className="text-slate-500 dark:text-slate-400">We reply within one business day</p>
                     </div>
@@ -251,8 +254,8 @@ const FormPage = () => {
                   <li className="flex items-start gap-3">
                     <MapPin size={18} className="mt-0.5 text-amber-500" />
                     <div>
-                      <p className="font-medium">123 Legal Street, Suite 100</p>
-                      <p className="text-slate-500 dark:text-slate-400">City, State 12345</p>
+                      <p className="font-medium">Office:2382T|29</p>
+                      <p className="text-slate-500 dark:text-slate-400">Mandi Extension Narela 110040</p>
                     </div>
                   </li>
                   <li className="flex items-start gap-3">
@@ -280,7 +283,7 @@ const FormPage = () => {
         {/* Footer */}
         <footer className="border-t border-slate-200 dark:border-slate-800 py-10">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-sm text-slate-500 dark:text-slate-400">
-            &copy; {new Date().getFullYear()} Sterling & Associates. All rights reserved.
+            &copy; {new Date().getFullYear()} Naveen Kumar Garg And Associates . All rights reserved.
           </div>
         </footer>
       </div>

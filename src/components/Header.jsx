@@ -12,13 +12,13 @@ const Header = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-3 text-sm">
             <div className="flex items-center space-x-6">
-              <a href="tel:+1234567890" className="flex items-center space-x-2 hover:text-amber-400 transition-colors">
+              <a href="tel:+8285558855" className="flex items-center space-x-2 hover:text-amber-400 transition-colors">
                 <Phone size={16} />
-                <span>(123) 456-7890</span>
+                <span>CallUs</span>
               </a>
-              <a href="mailto:contact@lawfirm.com" className="hidden sm:flex items-center space-x-2 hover:text-amber-400 transition-colors">
+              <a href="mailto:adv.naveengarg123@gmail.com" className="hidden sm:flex items-center space-x-2 hover:text-amber-400 transition-colors">
                 <Mail size={16} />
-                <span>contact@lawfirm.com</span>
+                <span>MailUs</span>
               </a>
             </div>
             <div className="text-slate-300">
@@ -37,8 +37,9 @@ const Header = () => {
               <Scale size={28} className="text-slate-900" />
             </div>
             <div>
-              <h1 className="text-2xl font-bold">Sterling & Associates</h1>
-              <p className="text-xs text-slate-400">Attorneys at Law</p>
+              <h1 className="text-2xl font-bold">Naveen Kumar Garg And Associates</h1>
+              <p className="text-xs text-slate-400">Advoctes | Solicitors | Legal Consultants</p>
+              <p className="text-xs text-slate-400">Delhi High Court And All District Courts</p>
             </div>
           </div>
 
