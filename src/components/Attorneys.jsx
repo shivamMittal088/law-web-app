@@ -1,83 +1,77 @@
 import React from "react";
-import { Linkedin, Mail, Phone, Award, Gavel, GraduationCap } from "lucide-react";
+import { Award, Gavel, GraduationCap } from "lucide-react";
+
+// ✅ Importing images from src (not public)
+import attorneyPriya from "../utils/images/attorney-priya.png";
+import attorneyArjun from "../utils/images/attorney-arjun.png";
+import attorneyAman from "../utils/images/attorney-aman.png";
 
 const ATTORNEYS = [
   {
-    name: "John Sterling, Esq.",
-    role: "Senior Partner — Litigation",
-    years: 35,
-    focus: ["Corporate Disputes", "High-stakes Litigation", "Arbitration"],
-    img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop",
-    email: "john@lawfirm.com",
-    phone: "(123) 456-7890",
-    linkedin: "#",
-    highlights: [
-      "Lead counsel in 120+ complex matters",
-      "Recognized in Top 100 Trial Lawyers",
-    ],
-  },
-  {
-    name: "Amelia Hart, Esq.",
-    role: "Partner — Family & Custody",
-    years: 18,
+    name: "Adv. Priya Sharma",
+    role: "Partner — Family & Matrimonial",
+    years: 5,
     focus: ["Divorce", "Custody", "Mediation"],
-    img: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=800&auto=format&fit=crop",
-    email: "amelia@lawfirm.com",
-    phone: "(123) 456-7891",
-    linkedin: "#",
-    highlights: ["Certified Family Mediator", "Best Lawyers® 2024"],
+    img: attorneyPriya,
+    highlights: ["Certified Family Mediator", "Handled 300+ family matters"],
   },
   {
-    name: "Daniel Cho, Esq.",
-    role: "Partner — Corporate",
-    years: 15,
+    name: "Adv. Arjun Mehta",
+    role: "Senior Partner — Litigation (High Court)",
+    years: 8,
+    focus: ["Civil Litigation", "Arbitration", "Writs"],
+    img: attorneyArjun,
+    highlights: ["Argued 150+ High Court cases", "Empanelled Arbitrator"],
+  },
+  {
+    name: "Adv. Aman Sharma",
+    role: "Partner — Corporate & Startups",
+    years: 28,
     focus: ["M&A", "VC & Startups", "Contracts"],
-    img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=800&auto=format&fit=crop",
-    email: "daniel@lawfirm.com",
-    phone: "(123) 456-7892",
-    linkedin: "#",
-    highlights: ["Closed 60+ M&A transactions", "Former GC, tech unicorn"],
+    img: attorneyAman,
+    highlights: ["Closed 40+ M&A deals", "Ex-Inhouse Counsel, unicorn"],
   },
 ];
 
-const  AttorneysSection = ()=> {
+const AttorneysSection = () => {
   return (
-    <section id="attorneys" className="py-12 bg-white dark:bg-slate-950">
+    <section id="attorneys" className="py-16 bg-slate-900 dark:bg-slate-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Header */}
-        <div className="text-center mb-8">
-          <p className="uppercase tracking-wider text-[11px] font-semibold text-amber-600 mb-1">
+        {/* Section Header */}
+        <div className="text-center mb-10">
+          <p className="uppercase tracking-wider text-[11px] font-semibold text-amber-500 mb-1">
             Our Team
           </p>
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white">Attorneys</h2>
-          <p className="text-xs text-slate-600 dark:text-slate-400 mt-1">
+          <h2 className="text-3xl font-bold text-white">Attorneys</h2>
+          <p className="text-sm text-slate-400 mt-2">
             Experienced, measured, and client-focused counsel.
           </p>
         </div>
 
-        {/* Cards */}
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+        {/* Attorney Cards */}
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {ATTORNEYS.map((a) => (
             <article
-              key={a.email}
-              className="group rounded-xl border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 shadow-sm overflow-hidden hover:shadow-md transition-shadow"
+              key={a.name}
+              className="group rounded-xl border border-slate-800 bg-slate-800/40 backdrop-blur-sm shadow-md hover:shadow-lg transition-shadow overflow-hidden"
             >
-              <div className="relative overflow-hidden">
+              {/* ✅ FIXED IMAGE RATIO + FOCAL POINT */}
+              <div className="relative aspect-[4/5] w-full rounded-t-xl overflow-hidden bg-slate-900">
                 <img
                   src={a.img}
-                  alt={a.name}
-                  className="w-full h-44 object-cover transform group-hover:scale-[1.02] transition-transform duration-500"
+                  alt={`${a.name} — ${a.role}`}
+                  className="absolute inset-0 h-full w-full object-cover object-top transform group-hover:scale-[1.03] transition-transform duration-500"
+                  loading="lazy"
                 />
               </div>
 
-              <div className="p-5">
-                <h3 className="text-sm font-semibold text-slate-900 dark:text-slate-100">
-                  {a.name}
-                </h3>
-                <p className="text-[12px] text-slate-600 dark:text-slate-400">{a.role}</p>
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="text-base font-semibold text-white">{a.name}</h3>
+                <p className="text-[13px] text-slate-400">{a.role}</p>
 
-                {/* Meta */}
-                <div className="mt-3 flex items-center gap-3 text-[12px] text-slate-600 dark:text-slate-300">
+                {/* Meta Info */}
+                <div className="mt-3 flex items-center gap-3 text-[12px] text-slate-400">
                   <span className="inline-flex items-center gap-1">
                     <Gavel size={14} /> {a.years}+ yrs
                   </span>
@@ -90,11 +84,11 @@ const  AttorneysSection = ()=> {
                 </div>
 
                 {/* Focus tags */}
-                <div className="mt-3 flex flex-wrap gap-2">
+                <div className="mt-4 flex flex-wrap gap-2">
                   {a.focus.map((t) => (
                     <span
                       key={t}
-                      className="rounded-md border border-slate-200 dark:border-slate-700 px-2 py-1 text-[11px] text-slate-700 dark:text-slate-200"
+                      className="rounded-md border border-slate-700 px-2 py-1 text-[11px] text-slate-300"
                     >
                       {t}
                     </span>
@@ -106,65 +100,29 @@ const  AttorneysSection = ()=> {
                   {a.highlights.map((h) => (
                     <li
                       key={h}
-                      className="text-[12px] leading-snug text-slate-600 dark:text-slate-300"
+                      className="text-[12px] leading-snug text-slate-400"
                     >
                       • {h}
                     </li>
                   ))}
                 </ul>
-
-                {/* Actions */}
-                <div className="mt-4 flex items-center justify-between">
-                  <div className="flex items-center gap-2">
-                    <a
-                      href={`mailto:${a.email}`}
-                      className="inline-flex items-center justify-center h-8 w-8 rounded-md border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
-                      title="Email"
-                    >
-                      <Mail size={16} />
-                    </a>
-                    <a
-                      href={`tel:${a.phone.replace(/[^\d+]/g, "")}`}
-                      className="inline-flex items-center justify-center h-8 w-8 rounded-md border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
-                      title="Call"
-                    >
-                      <Phone size={16} />
-                    </a>
-                    <a
-                      href={a.linkedin}
-                      target="_blank"
-                      rel="noreferrer"
-                      className="inline-flex items-center justify-center h-8 w-8 rounded-md border border-slate-200 dark:border-slate-700 hover:bg-slate-50 dark:hover:bg-slate-800"
-                      title="LinkedIn"
-                    >
-                      <Linkedin size={16} />
-                    </a>
-                  </div>
-
-                  <a
-                    href="#contact"
-                    className="text-[12px] font-medium text-amber-700 dark:text-amber-400 hover:underline"
-                  >
-                    Book consultation →
-                  </a>
-                </div>
               </div>
             </article>
           ))}
         </div>
 
-        {/* CTA (compact) */}
-        <div className="mt-8 flex justify-center">
+        {/* CTA */}
+        <div className="mt-10 flex justify-center">
           <a
-            href="#attorneys"
-            className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold hover:bg-amber-400 transition-colors"
+            href="#contact"
+            className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-5 py-2 text-sm font-semibold hover:bg-amber-400 transition-colors"
           >
-            Meet the Full Team
+            Book a Consultation
           </a>
         </div>
       </div>
     </section>
   );
-}
+};
 
 export default AttorneysSection;

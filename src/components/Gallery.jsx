@@ -12,13 +12,12 @@ const Gallery = () => {
       title: "Main Office",
       src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
     },
-    { title: "Conference Room", src: img2 },
-    { title: "Meeting Space",    src: img1 },
-    { title: "Client Lounge",    src: img3 },
+    { title: "Lawyer", src: img2 },
+    { title: "Meeting Space",    src: img3 },
   ];
 
   // 🔎 TEMP: see what paths React resolved to
-  console.log({ img1, img2, img3 });
+  // console.log({ img1, img2, img3 });
 
   return (
     <section className="py-16 bg-slate-50">
