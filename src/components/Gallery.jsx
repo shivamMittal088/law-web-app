@@ -5,6 +5,7 @@ import { Scale } from "lucide-react";
 import img1 from "../utils/images/img1.jpg";
 import img2 from "../utils/images/img2.jpg";
 import img3 from "../utils/images/img3.jpg";
+import CommitmentToJustice from "../utils/images/CommitmentToJustice.png";
 
 const Gallery = () => {
   const images = [
@@ -14,6 +15,7 @@ const Gallery = () => {
     },
     { title: "Lawyer", src: img2 },
     { title: "Meeting Space",    src: img3 },
+    { title : "Commitment to Justice", src: CommitmentToJustice },
   ];
 
   // 🔎 TEMP: see what paths React resolved to

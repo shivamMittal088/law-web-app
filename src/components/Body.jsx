@@ -5,6 +5,7 @@ import { RouterProvider } from "react-router-dom"
 import About from './About';
 import MainPage from './MainPage';
 import FormPage from './FormPage';
+import PrivacyPolicy from './PrivacyPolicyPage';
 
 const Body = () => {
 
@@ -22,7 +23,12 @@ const Body = () => {
         {
             path : "/Form",
             element : <FormPage />
-        }
+        },
+
+        {
+            path : "/privacy-policy",
+            element : <PrivacyPolicy />
+        },
 
     ]);
 

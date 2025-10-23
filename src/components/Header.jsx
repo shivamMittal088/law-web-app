@@ -1,106 +1,145 @@
-import React, { useState } from 'react';
-import { Scale, Phone, Mail, Menu, X } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Scale, Phone, Mail, Menu, X } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Header = () => {
-  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <header className="bg-slate-900 text-white">
-      {/* Top bar with contact info */}
-      <div className="bg-slate-800 border-b border-slate-700">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center py-3 text-sm">
-            <div className="flex items-center space-x-6">
-              <a href="tel:+8285558855" className="flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                <Phone size={16} />
-                <span>CallUs</span>
-              </a>
-              <a href="mailto:adv.naveengarg123@gmail.com" className="hidden sm:flex items-center space-x-2 hover:text-amber-400 transition-colors">
-                <Mail size={16} />
-                <span>MailUs</span>
-              </a>
-            </div>
-            <div className="text-slate-300">
-              <span className="hidden md:inline">Available 24/7 for Emergencies</span>
-            </div>
+    <header className="bg-slate-900 text-white border-b border-slate-800">
+      {/* --- Top Contact Bar --- */}
+      <div className="bg-slate-800 text-xs sm:text-sm py-2">
+        <div className="max-w-6xl mx-auto flex justify-between items-center px-4">
+          <div className="flex space-x-5">
+            <a
+              href="tel:+918285558855"
+              className="flex items-center space-x-2 hover:text-amber-400"
+            >
+              <Phone size={14} />
+              <span>Call Us</span>
+            </a>
+            <a
+              href="mailto:adv.naveengarg123@gmail.com"
+              className="hidden sm:flex items-center space-x-2 hover:text-amber-400"
+            >
+              <Mail size={14} />
+              <span>Mail Us</span>
+            </a>
           </div>
+          <span className="hidden md:block text-slate-400">
+            Available 24/7 for Emergencies
+          </span>
         </div>
       </div>
 
-      {/* Main navigation */}
-      <nav className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center py-4">
-          {/* Logo */}
-          <div className="flex items-center space-x-3">
-            <div className="bg-amber-500 p-2 rounded">
-              <Scale size={28} className="text-slate-900" />
-            </div>
-            <div>
-              <h1 className="text-2xl font-bold">Naveen Kumar Garg And Associates</h1>
-              <p className="text-xs text-slate-400">Advoctes | Solicitors | Legal Consultants</p>
-              <p className="text-xs text-slate-400">Delhi High Court And All District Courts</p>
-            </div>
+      {/* --- Main Navbar --- */}
+      <div className="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+        {/* --- Logo --- */}
+        <div className="flex items-center space-x-2">
+          <div className="bg-amber-500 p-1.5 rounded">
+            <Scale size={20} className="text-slate-900" />
           </div>
-
-
-          {/* Desktop Navigation */}
-          <div className="hidden lg:flex items-center space-x-8">
-            <Link 
-            to = "/" 
-            className="hover:text-amber-400 transition-colors font-medium">
-              Home
-            </Link>
-
-
-            <Link 
-            to="/about" 
-            className="hover:text-amber-400 transition-colors font-medium">
-              About
-            </Link>
-
-
-            <a href="#practice" className="hover:text-amber-400 transition-colors font-medium">Practice Areas</a>
-            <a href="#attorneys" className="hover:text-amber-400 transition-colors font-medium">Attorneys</a>
-            <a href="#testimonials" className="hover:text-amber-400 transition-colors font-medium">Testimonials</a>
-
-
-            <Link to = "/Form"href="#contact" className="bg-amber-500 text-slate-900 px-6 py-2 rounded font-semibold hover:bg-amber-400 transition-colors">
-              Free Consultation
-            </Link>
+          <div>
+            <h1 className="text-base sm:text-lg font-bold">
+              Naveen Kumar Garg & Associates
+            </h1>
+            <p className="text-[11px] text-slate-400">
+              Advocates | Solicitors | Legal Consultants
+            </p>
+            <p className="text-[11px] text-slate-400">
+              Delhi High Court & District Courts
+            </p>
           </div>
-
-          {/* Mobile menu button */}
-          <button 
-            className="lg:hidden p-2 hover:bg-slate-800 rounded transition-colors"
-            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          >
-            {mobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
-          </button>
         </div>
 
-        {/* Mobile Navigation */}
-        {mobileMenuOpen && (
-          <div className="lg:hidden pb-4 space-y-2">
-            <a href="#home" className="block py-2 px-4 hover:bg-slate-800 rounded transition-colors">Home</a>
-            <a href="#about" className="block py-2 px-4 hover:bg-slate-800 rounded transition-colors">About</a>
-            <a href="#practice" className="block py-2 px-4 hover:bg-slate-800 rounded transition-colors">Practice Areas</a>
-            <a href="#attorneys" className="block py-2 px-4 hover:bg-slate-800 rounded transition-colors">Attorneys</a>
-            <a href="#testimonials" className="block py-2 px-4 hover:bg-slate-800 rounded transition-colors">Testimonials</a>
+        {/* --- Desktop Menu --- */}
+        <div className="hidden lg:flex space-x-6 text-sm font-medium">
+          <Link to="/" className="hover:text-amber-400">
+            Home
+          </Link>
+          <Link to="/about" className="hover:text-amber-400">
+            About
+          </Link>
+          <a href="#practice" className="hover:text-amber-400">
+            Practice Areas
+          </a>
+          <a href="#attorneys" className="hover:text-amber-400">
+            Attorneys
+          </a>
+          <a href="#testimonials" className="hover:text-amber-400">
+            Testimonials
+          </a>
 
+          <Link
+            to="/form"
+            className="bg-amber-500 text-slate-900 px-4 py-1.5 rounded font-semibold hover:bg-amber-400"
+          >
+            Free Consultation
+          </Link>
 
-            <Link 
-            to="/Form"  
-            className="block bg-amber-500 text-slate-900 py-2 px-4 rounded font-semibold hover:bg-amber-400 transition-colors text-center mt-4">
-              Free Consultation
-            </Link>
+          <Link
+            to="/privacy-policy"
+            className="px-3 py-1 rounded hover:text-amber-400"
+          >
+            Privacy Policy
+          </Link>
+        </div>
 
+        {/* --- Mobile Menu Button --- */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="lg:hidden p-2 hover:bg-slate-800 rounded"
+        >
+          {menuOpen ? <X size={22} /> : <Menu size={22} />}
+        </button>
+      </div>
 
-          </div>
-        )}
-      </nav>
+      {/* --- Mobile Menu --- */}
+      {menuOpen && (
+        <div className="lg:hidden bg-slate-800 text-sm px-4 pb-4 space-y-2">
+          <Link
+            to="/"
+            onClick={() => setMenuOpen(false)}
+            className="block py-2 hover:text-amber-400"
+          >
+            Home
+          </Link>
+          <Link
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className="block py-2 hover:text-amber-400"
+          >
+            About
+          </Link>
+          <a href="#practice" className="block py-2 hover:text-amber-400">
+            Practice Areas
+          </a>
+          <a href="#attorneys" className="block py-2 hover:text-amber-400">
+            Attorneys
+          </a>
+          <a href="#testimonials" className="block py-2 hover:text-amber-400">
+            Testimonials
+          </a>
+
+          <Link
+            to="/form"
+            onClick={() => setMenuOpen(false)}
+            className="block bg-amber-500 text-slate-900 py-2 rounded font-semibold hover:bg-amber-400 text-center mt-2"
+          >
+            Free Consultation
+          </Link>
+
+          <Link
+            to="/privacy-policy"
+            onClick={() => setMenuOpen(false)}
+            className="block py-2 hover:text-amber-400 text-center"
+          >
+            Privacy Policy
+          </Link>
+        </div>
+      )}
     </header>
   );
-}
+};
 
 export default Header;
