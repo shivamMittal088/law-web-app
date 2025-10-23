@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import logo from "../utils/images/logo.png";
 
 const Hero = () => {
   return (
@@ -42,19 +43,19 @@ const Hero = () => {
               {/* Stats */}
               <div className="grid grid-cols-3 gap-4 pt-6 border-t border-slate-700 mt-4">
                 <div>
-                  <div className="text-2xl font-bold text-amber-400">500+</div>
+                  <div className="text-2xl font-bold text-amber-400">50+</div>
                   <div className="text-xs text-slate-400 tracking-wide">
                     Cases Won
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-amber-400">35+</div>
+                  <div className="text-2xl font-bold text-amber-400">10+</div>
                   <div className="text-xs text-slate-400 tracking-wide">
                     Years Experience
                   </div>
                 </div>
                 <div>
-                  <div className="text-2xl font-bold text-amber-400">98%</div>
+                  <div className="text-2xl font-bold text-amber-400">90%</div>
                   <div className="text-xs text-slate-400 tracking-wide">
                     Success Rate
                   </div>
@@ -62,14 +63,25 @@ const Hero = () => {
               </div>
             </div>
 
-            {/* Right illustration (optional placeholder) */}
-            <div className="hidden lg:flex items-center justify-center">
-              <div className="w-72 h-72 rounded-full bg-gradient-to-tr from-amber-500/10 to-transparent border border-amber-500/20 flex items-center justify-center">
-                <span className="text-sm text-amber-400 tracking-widest uppercase">
-                  Legal Expertise
-                </span>
-              </div>
-            </div>
+            {/* Right illustration (with image and centered text) */}
+<div className="hidden lg:flex items-center justify-center">
+  <div className="relative w-72 h-72 rounded-full bg-gradient-to-tr from-amber-500/10 to-transparent border border-amber-500/20 flex items-center justify-center overflow-hidden">
+    
+    {/* Logo Image */}
+    <img
+      src={logo} // <-- replace with your image path
+      alt="NKG Logo"
+      className="absolute inset-0 w-full h-full object-contain opacity-90"
+    />
+
+    {/* Centered Text
+    <span className="absolute text-lg font-semibold text-amber-500 tracking-widest uppercase">
+      Legal Expertise
+    </span> */}
+
+  </div>
+</div>
+
           </div>
         </div>
       </section>

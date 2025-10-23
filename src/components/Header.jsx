@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Scale, Phone, Mail, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
+import logo from "../utils/images/logo.png";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,8 +36,14 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="bg-amber-500 p-1.5 rounded">
-            <Scale size={20} className="text-slate-900" />
+            {/* <Scale size={20} className="text-slate-900" /> */}
+            <img 
+            src = {logo}
+            alt="Logo"
+            className="h-6 w-6 object-contain"
+            />
           </div>
+
           <div>
             <h1 className="text-base sm:text-lg font-bold">Naveen Kumar Garg & Associates</h1>
             <p className="text-[11px] text-slate-400">Advocates | Solicitors | Legal Consultants</p>
