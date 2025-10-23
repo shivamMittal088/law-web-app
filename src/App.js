@@ -1,6 +1,7 @@
 import Body from './components/Body';
 import { useState ,useEffect } from 'react';
 import OfflinePage from './components/OfflinePage';
+import WhatsAppButton from './components/WhatsappButton';
 
 const App = () => {
   const [isOnline, setIsOnline] = useState(navigator.onLine);
@@ -21,6 +22,7 @@ const App = () => {
   return (
     <>
       {isOnline ? <Body /> : <OfflinePage />}
+      <WhatsAppButton />
     </>
   );
 };
