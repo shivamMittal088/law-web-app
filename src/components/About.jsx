@@ -132,19 +132,19 @@ export default function AboutPage() {
 
           {mobileMenuOpen && (
             <div className="lg:hidden pb-4 space-y-2">
-              <MobileItem href="#home">Home</MobileItem>
-              <MobileItem href="#about" active>
+              <Link to="/">Home</Link>
+              {/* <MobileItem href="#about" active>
                 About
-              </MobileItem>
-              <MobileItem href="#practice">Practice Areas</MobileItem>
+              </MobileItem> */}
+              {/* <MobileItem href="#practice">Practice Areas</MobileItem>
               <MobileItem href="#attorneys">Attorneys</MobileItem>
-              <MobileItem href="#testimonials">Testimonials</MobileItem>
-              <Link
+              <MobileItem href="#testimonials">Testimonials</MobileItem> */}
+              {/* <Link
                 to="/Form"
                 className="block text-center bg-gradient-to-b from-amber-400 to-amber-500 text-slate-900 py-2.5 px-4 rounded-lg font-semibold hover:brightness-110 transition-all"
               >
                 Free Consultation
-              </Link>
+              </Link> */}
             </div>
           )}
         </nav>
