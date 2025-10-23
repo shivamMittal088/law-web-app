@@ -1,11 +1,16 @@
 import React from "react";
-import { ShieldCheck, FileText, Scale } from "lucide-react";
+import { ShieldCheck, FileText, Scale,ArrowBigLeft } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const PrivacyPolicy = () => {
   return (
-    <section className="py-16 bg-gradient-to-br from-white via-amber-50 to-white text-slate-800">
+    <section className="py-4 bg-gradient-to-br from-white via-amber-50 to-white text-slate-800">
       <div className="max-w-4xl mx-auto px-6">
-        
+       <div className="flex justify-center mb-4 py-2">
+         <Link to="/" className="rounded-lg hover:bg-amber-100">
+           <ArrowBigLeft className="text-amber-600 hover:text-amber-800" size={26}/>
+         </Link>
+       </div>
         {/* Header */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center mb-3">
