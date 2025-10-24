@@ -6,6 +6,7 @@ import About from './About';
 import MainPage from './MainPage';
 import FormPage from './FormPage';
 import PrivacyPolicy from './PrivacyPolicyPage';
+import PracticeAreasPage from './PracticeAreasPage';
 
 const Body = () => {
 
@@ -29,6 +30,11 @@ const Body = () => {
             path : "/privacy-policy",
             element : <PrivacyPolicy />
         },
+
+        {
+            path : "/PracticeAreas",
+            element : <PracticeAreasPage />
+        }
 
     ]);
 

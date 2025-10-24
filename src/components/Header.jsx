@@ -55,7 +55,7 @@ const Header = () => {
         <nav className="hidden lg:flex space-x-6 text-sm font-medium">
           <Link to="/" className="hover:text-amber-400">Home</Link>
           <Link to="/about" className="hover:text-amber-400">About</Link>
-          <a href="#practice" className="hover:text-amber-400">Practice Areas</a>
+          <Link to="/PracticeAreas" className="hover:text-amber-400">Practice Areas</Link>
           <a href="#attorneys" className="hover:text-amber-400">Attorneys</a>
           <a href="#testimonials" className="hover:text-amber-400">Testimonials</a>
           <Link to="/form" className="bg-amber-500 text-slate-900 px-4 py-1.5 rounded font-semibold hover:bg-amber-400">
@@ -81,7 +81,7 @@ const Header = () => {
         <div className="lg:hidden bg-slate-800 text-sm px-4 pb-4 space-y-2">
           <Link to="/" onClick={closeMenu} className="block py-2 hover:text-amber-400">Home</Link>
           <Link to="/about" onClick={closeMenu} className="block py-2 hover:text-amber-400">About</Link>
-          <a href="#practice" onClick={closeMenu} className="block py-2 hover:text-amber-400">Practice Areas</a>
+          <Link to="/PracticeAreas" onClick={closeMenu} className="block py-2 hover:text-amber-400">Practice Areas</Link>
           <a href="#attorneys" onClick={closeMenu} className="block py-2 hover:text-amber-400">Attorneys</a>
           <a href="#testimonials" onClick={closeMenu} className="block py-2 hover:text-amber-400">Testimonials</a>
 
