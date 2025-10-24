@@ -4,6 +4,7 @@ import { Scale, Phone, Mail, Menu, X } from "lucide-react";
 import { Link } from "react-router-dom";
 import logo from "../utils/images/logo.png";
 
+
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -58,8 +59,8 @@ const Header = () => {
           <Link to="/PracticeAreas" className="hover:text-amber-400">Practice Areas</Link>
           <a href="#attorneys" className="hover:text-amber-400">Attorneys</a>
           <a href="#testimonials" className="hover:text-amber-400">Testimonials</a>
-          <Link to="/form" className="bg-amber-500 text-slate-900 px-4 py-1.5 rounded font-semibold hover:bg-amber-400">
-            Free Consultation
+          <Link to="/ConsultationPage" className="bg-amber-500 text-slate-900 px-4 py-1.5 rounded font-semibold hover:bg-amber-400">
+            Consultation
           </Link>
           <Link to="/privacy-policy" className="px-3 py-1 rounded hover:text-amber-400">
             Privacy Policy
@@ -86,11 +87,11 @@ const Header = () => {
           <a href="#testimonials" onClick={closeMenu} className="block py-2 hover:text-amber-400">Testimonials</a>
 
           <Link
-            to="/form"
+            to="/ConsultationPage"
             onClick={closeMenu}
             className="block bg-amber-500 text-slate-900 py-2 rounded font-semibold hover:bg-amber-400 text-center mt-2"
           >
-            Free Consultation
+            Consultation
           </Link>
 
           <Link to="/privacy-policy" onClick={closeMenu} className="block py-2 hover:text-amber-400 text-center">

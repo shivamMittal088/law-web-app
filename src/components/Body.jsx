@@ -7,6 +7,7 @@ import MainPage from './MainPage';
 import FormPage from './FormPage';
 import PrivacyPolicy from './PrivacyPolicyPage';
 import PracticeAreasPage from './PracticeAreasPage';
+import ConsultationPage from './ConsultationPage';
 
 const Body = () => {
 
@@ -22,8 +23,8 @@ const Body = () => {
         } ,
 
         {
-            path : "/Form",
-            element : <FormPage />
+            path : "/ConsultationPage",
+            element : <ConsultationPage />
         },
 
         {

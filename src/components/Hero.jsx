@@ -31,7 +31,7 @@ const Hero = () => {
 
               {/* Buttons */}
               <div className="flex flex-col sm:flex-row gap-1">
-                <Link to="/Form">
+                <Link to="/ConsultationPage">
                 <button 
                 className="bg-amber-500 text-slate-900 px-6 py-2.5 rounded-md text-sm font-medium hover:bg-amber-400 transition-all transform hover:scale-105 shadow-md">
                   Schedule Free Consultation

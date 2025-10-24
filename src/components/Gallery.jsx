@@ -2,7 +2,7 @@ import React from "react";
 import { Scale } from "lucide-react";
 
 // ✅ Import the files directly (adjust names to match exactly)
-import img1 from "../utils/images/img1.jpg";
+import profilePhoto from "../utils/images/profilePhoto.jpg";
 import img2 from "../utils/images/img2.jpg";
 import img3 from "../utils/images/img3.jpg";
 import CommitmentToJustice from "../utils/images/CommitmentToJustice.png";
@@ -10,8 +10,8 @@ import CommitmentToJustice from "../utils/images/CommitmentToJustice.png";
 const Gallery = () => {
   const images = [
     {
-      title: "Main Office",
-      src: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?auto=format&fit=crop&w=800&q=80",
+      title: "Profile Photo",
+      src: profilePhoto,
     },
     { title: "Lawyer", src: img2 },
     { title: "Meeting Space",    src: img3 },

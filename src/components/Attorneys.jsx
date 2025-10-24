@@ -1,5 +1,6 @@
 import React from "react";
 import { Award, Gavel, GraduationCap } from "lucide-react";
+import { Link } from "react-router-dom";
 
 // ✅ Importing images from src (not public)
 import attorneyPriya from "../utils/images/attorney-priya.png";
@@ -113,12 +114,12 @@ const AttorneysSection = () => {
 
         {/* CTA */}
         <div className="mt-10 flex justify-center">
-          <a
-            href="#contact"
+          <Link
+            to="/ConsultationPage"
             className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-5 py-2 text-sm font-semibold hover:bg-amber-400 transition-colors"
           >
             Book a Consultation
-          </a>
+          </Link>
         </div>
       </div>
     </section>

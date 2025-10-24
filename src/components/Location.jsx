@@ -24,19 +24,41 @@ const LocationPage = () => {
         </div>
 
         {/* Content Grid */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 items-start">
           
-          {/* Left: Map */}
-          <div className="rounded-xl overflow-hidden shadow-md border border-amber-100">
-            <iframe
-              title="Law Office Location"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3500.232761712343!2d77.22732197538228!3d28.61291607568702!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce2d7abcf3c61%3A0x2f8d3f512f2e4dd1!2sSupreme%20Court%20of%20India!5e0!3m2!1sen!2sin!4v1692100081234!5m2!1sen!2sin"
-              width="100%"
-              height="300"
-              allowFullScreen=""
-              loading="lazy"
-              className="border-none"
-            ></iframe>
+          {/* Left: TWO Small Maps */}
+          <div className="space-y-4">
+            {/* Map 1 — Mandi Extension, Narela */}
+            <div className="rounded-xl overflow-hidden shadow-md border border-amber-100">
+              <div className="px-3 py-2 text-xs font-medium text-slate-700 bg-amber-50 border-b border-amber-100">
+                Mandi Extension, Narela (Delhi 110040)
+              </div>
+              <iframe
+                title="Mandi Extension, Narela Map"
+                src="https://maps.google.com/maps?q=28.85267,77.09288&z=15&output=embed"
+                width="100%"
+                height="220"
+                loading="lazy"
+                className="border-none"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
+
+            {/* Map 2 — Tis Hazari Courts */}
+            <div className="rounded-xl overflow-hidden shadow-md border border-amber-100">
+              <div className="px-3 py-2 text-xs font-medium text-slate-700 bg-amber-50 border-b border-amber-100">
+                Tis Hazari Court (Delhi 110055)
+              </div>
+              <iframe
+                title="Tis Hazari Court Map"
+                src="https://maps.google.com/maps?q=28.66670,77.21670&z=15&output=embed"
+                width="100%"
+                height="220"
+                loading="lazy"
+                className="border-none"
+                referrerPolicy="no-referrer-when-downgrade"
+              />
+            </div>
           </div>
 
           {/* Right: Info Cards */}
@@ -48,7 +70,12 @@ const LocationPage = () => {
               <div>
                 <h4 className="font-semibold text-slate-900 text-sm">Office Address</h4>
                 <p className="text-slate-600 text-xs mt-1">
-                  123 Legal Street, Connaught Place, New Delhi, India 110001
+                  Office :- 2382T/29 <br />
+                  Mandi Extension Narela , Delhi 110040, India
+                </p>
+                <h4 className="font-semibold text-slate-900 text-sm mt-3">Alternate Office :-</h4>
+                <p className="text-slate-600 text-xs mt-1">
+                  Chamber no - 347A first floor , Western Wing Tis Hazari court delhi -110055
                 </p>
               </div>
             </div>
@@ -58,7 +85,7 @@ const LocationPage = () => {
               <Phone className="text-amber-500 mt-1" size={20} />
               <div>
                 <h4 className="font-semibold text-slate-900 text-sm">Phone</h4>
-                <p className="text-slate-600 text-xs mt-1">+91 98765 43210</p>
+                <p className="text-slate-600 text-xs mt-1">+91 8285558855</p>
               </div>
             </div>
 
@@ -67,7 +94,7 @@ const LocationPage = () => {
               <Mail className="text-amber-500 mt-1" size={20} />
               <div>
                 <h4 className="font-semibold text-slate-900 text-sm">Email</h4>
-                <p className="text-slate-600 text-xs mt-1">contact@advocatenaveengarg.com</p>
+                <p className="text-slate-600 text-xs mt-1">adv.naveengarg1993@gmail.com</p>
               </div>
             </div>
 
@@ -77,7 +104,7 @@ const LocationPage = () => {
               <div>
                 <h4 className="font-semibold text-slate-900 text-sm">Working Hours</h4>
                 <p className="text-slate-600 text-xs mt-1">
-                  Mon – Sat: 9:00 AM – 7:00 PM <br /> Sun: Closed
+                  Mon – Sat: 9:00 AM – 5:00 PM <br /> Sun: Closed
                 </p>
               </div>
             </div>

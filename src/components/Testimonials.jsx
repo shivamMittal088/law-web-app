@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const TESTIMONIALS = [
   {
-    name: "Samantha R.",
+    name: "Amrita.",
     role: "Small Business Owner",
     quote:
       "Sterling & Associates guided us through a complex dispute with clarity and care. Their preparation and communication were outstanding.",
@@ -12,19 +12,19 @@ const TESTIMONIALS = [
     img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop",
   },
   {
-    name: "David M.",
+    name: "Priya.",
     role: "Tech Founder",
     quote:
       "Measured, strategic, and effective. The team protected our interests during a high-stakes negotiation and delivered a great outcome.",
-    rating: 5,
+    rating: 4.3,
     img: "https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=256&auto=format&fit=crop",
   },
   {
-    name: "Priya K.",
+    name: "Anamika.",
     role: "Marketing Director",
     quote:
       "Compassionate counsel and clear guidance at every step. I felt supported and informed throughout the entire process.",
-    rating: 5,
+    rating: 4.7,
     img: "https://images.unsplash.com/photo-1554151228-14d9def656e4?q=80&w=256&auto=format&fit=crop",
   },
 ];
@@ -102,7 +102,7 @@ const TestimonialsSection = ()=> {
         {/* CTA */}
         <div className="mt-8 text-center">
           <Link
-            to="/Form"
+            to="/ConsultationPage"
             className="inline-flex items-center gap-2 rounded-md bg-amber-500 text-slate-900 px-4 py-2 text-xs font-semibold hover:bg-amber-400 transition-colors"
           >
             Book a Free Consultation

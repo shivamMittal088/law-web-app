@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import logo from "../utils/images/logo.png";
+
 import {
   Scale,
   Phone,
@@ -50,24 +52,24 @@ export default function AboutPage() {
             <div className="flex justify-between items-center py-2.5 text-xs sm:text-sm font-['Inter']">
               <div className="flex items-center gap-5">
                 <a
-                  href="tel:+1234567890"
+                  href="tel:82855588855"
                   className="inline-flex items-center gap-2 hover:text-amber-600 transition-colors"
                 >
                   <Phone size={16} />
-                  <span>(123) 456-7890</span>
+                  <span>8285558885</span>
                 </a>
                 <a
-                  href="mailto:contact@lawfirm.com"
+                  href="mailto:adv.naveengarg1993@gmail.com"
                   className="hidden sm:inline-flex items-center gap-2 hover:text-amber-600 transition-colors"
                 >
                   <Mail size={16} />
-                  <span>contact@lawfirm.com</span>
+                  <span>adv.naveengarg1993@gmail.com</span>
                 </a>
               </div>
 
               <div className="flex items-center gap-2">
                 <span className="hidden md:inline text-slate-600 dark:text-slate-300">
-                  Available 24/7 for Emergencies
+                  Available for Emergencies
                 </span>
 
                 {/* Theme toggle */}
@@ -93,24 +95,20 @@ export default function AboutPage() {
               <div>
                 <h1 className="text-2xl font-['Playfair_Display'] font-extrabold tracking-tight">
                   <span className="bg-gradient-to-r from-slate-900 via-slate-700 to-slate-900 dark:from-white dark:via-slate-200 dark:to-white bg-clip-text text-transparent">
-                    Sterling & Associates
+                    Naveen Kumar Garg And Associates
                   </span>
                 </h1>
                 <p className="text-[11px] uppercase tracking-[0.18em] text-slate-500 dark:text-slate-400">
-                  Attorneys at Law
+                  Advocates | Solicitors | Legal Consultants
                 </p>
               </div>
             </Link>
 
             <div className="hidden lg:flex items-center gap-8 font-['Inter'] text-[15px]">
               <NavLink to="/">Home</NavLink>
-              {/* <NavAnchor href="#about">About</NavAnchor> */}
-              {/* <NavAnchor href="#practice">Practice Areas</NavAnchor> */}
-              {/* <NavAnchor href="#attorneys">Attorneys</NavAnchor> */}
-              {/* <NavAnchor href="#testimonials">Testimonials</NavAnchor> */}
 
               <Link
-                to="/Form"
+                to="/ConsultationPage"
                 className="group relative inline-flex items-center gap-2 rounded-xl px-5 py-2.5 font-semibold
                            text-slate-900 bg-gradient-to-b from-amber-400 to-amber-500
                            shadow-[0_6px_20px_-6px_rgba(245,158,11,0.5)]
@@ -133,18 +131,6 @@ export default function AboutPage() {
           {mobileMenuOpen && (
             <div className="lg:hidden pb-4 space-y-2">
               <Link to="/">Home</Link>
-              {/* <MobileItem href="#about" active>
-                About
-              </MobileItem> */}
-              {/* <MobileItem href="#practice">Practice Areas</MobileItem>
-              <MobileItem href="#attorneys">Attorneys</MobileItem>
-              <MobileItem href="#testimonials">Testimonials</MobileItem> */}
-              {/* <Link
-                to="/Form"
-                className="block text-center bg-gradient-to-b from-amber-400 to-amber-500 text-slate-900 py-2.5 px-4 rounded-lg font-semibold hover:brightness-110 transition-all"
-              >
-                Free Consultation
-              </Link> */}
             </div>
           )}
         </nav>
@@ -172,12 +158,12 @@ export default function AboutPage() {
               </h2>
               <div className="space-y-4 text-slate-700 dark:text-slate-300 leading-relaxed font-['Inter']">
                 <p>
-                  Founded in 1985, Sterling & Associates has grown from a small practice into one of
+                  Naveen Kumar Garg and Associates has grown from a small practice into one of
                   the region&apos;s most respected law firms. Our journey began with a simple mission:
                   to provide exceptional legal services with integrity, dedication, and compassion.
                 </p>
                 <p>
-                  Over the past 35 years, we&apos;ve successfully represented thousands of clients,
+                  Over the past years, we&apos;ve successfully represented thousands of clients,
                   handling everything from complex corporate matters to sensitive family law cases.
                   Our commitment to excellence has earned us numerous accolades and, more
                   importantly, the trust of our community.
@@ -190,12 +176,21 @@ export default function AboutPage() {
               </div>
             </div>
 
-            <div className="relative rounded-2xl shadow-xl overflow-hidden">
-              <div className="absolute inset-0 bg-gradient-to-br from-amber-400/20 via-transparent to-amber-600/10 pointer-events-none" />
-              <div className="bg-gradient-to-br from-slate-200 to-slate-300 dark:from-slate-700 dark:to-slate-800 aspect-video flex items-center justify-center">
-                <Scale size={84} className="text-slate-600 dark:text-slate-300 opacity-60" />
-              </div>
-            </div>
+            <div className="relative rounded-2xl shadow-xl overflow-hidden bg-white dark:bg-slate-900 p-8 flex items-center justify-center">
+  {/* subtle glow */}
+  <div className="pointer-events-none absolute inset-0 opacity-60 [mask-image:radial-gradient(60%_50%_at_50%_50%,black,transparent)]">
+    <div className="absolute inset-0 bg-gradient-to-br from-amber-200/30 via-transparent to-amber-400/20" />
+  </div>
+
+  {/* logo */}
+  <img
+    src={logo}
+    alt="Naveen Kumar Garg & Associates — Logo"
+    className="relative z-10 max-h-56 w-auto object-contain drop-shadow"
+    loading="lazy"
+  />
+</div>
+
           </div>
         </div>
       </section>
@@ -231,7 +226,7 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-3xl font-['Playfair_Display'] font-extrabold text-slate-900 dark:text-white mb-3">
-              Why Choose Sterling & Associates
+              Why Choose Naveen Kumar Garg and Associates
             </h2>
             <p className="text-lg sm:text-xl text-slate-600 dark:text-slate-300 font-['Inter']">
               What sets us apart from other law firms
@@ -289,10 +284,10 @@ export default function AboutPage() {
 <section className="py-10 bg-gradient-to-br from-slate-100 to-slate-200 dark:from-slate-800 dark:to-slate-900">
   <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
     <div className="grid grid-cols-2 md:grid-cols-4 gap-6 sm:gap-8 text-center">
-      <Stat n="35+" label="Years of Excellence" />
-      <Stat n="500+" label="Cases Won" />
-      <Stat n="98%" label="Success Rate" />
-      <Stat n="1000+" label="Satisfied Clients" />
+      <Stat n="10+" label="Years of Excellence" />
+      <Stat n="50+" label="Cases Won" />
+      <Stat n="90%" label="Success Rate" />
+      <Stat n="100+" label="Satisfied Clients" />
     </div>
   </div>
 </section>
@@ -310,7 +305,7 @@ export default function AboutPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              to="/Form"
+              to="/ConsultationPage"
               className="inline-flex justify-center items-center rounded-xl px-7 py-3.5 font-semibold
                          text-white bg-slate-900 hover:bg-slate-800 transition-all
                          shadow-[0_10px_24px_-10px_rgba(0,0,0,0.6)] hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/70"
@@ -344,28 +339,28 @@ export default function AboutPage() {
                   <Scale size={20} className="text-slate-900" />
                 </div>
                 <div>
-                  <h3 className="text-xl font-['Playfair_Display'] font-extrabold">Sterling & Associates</h3>
-                  <p className="text-xs text-slate-400 tracking-wide uppercase">Attorneys at Law</p>
+                  <h3 className="text-xl font-['Playfair_Display'] font-extrabold">Naveen Kumar Garg And Associates</h3>
+                  <p className="text-xs text-slate-400 tracking-wide uppercase">Advocates | Solicitors | Legal Consultants</p>
                 </div>
               </div>
               <p className="text-slate-400 text-sm font-['Inter']">
-                Providing exceptional legal services with integrity and dedication since 1985.
+                Providing exceptional legal services with integrity and dedication.
               </p>
             </div>
 
             <div>
               <h4 className="font-['Inter'] font-bold mb-4">Contact Info</h4>
               <ul className="space-y-2 text-slate-400 text-sm font-['Inter']">
-                <li>123 Legal Street, Suite 100</li>
-                <li>City, State 12345</li>
+                <li>Mandi Extension Narela</li>
+                <li>Delhi , 110040</li>
                 <li className="pt-2">
-                  <a href="tel:+1234567890" className="hover:text-amber-400 transition-colors">
-                    Phone: (123) 456-7890
+                  <a href="tel:8285558855" className="hover:text-amber-400 transition-colors">
+                    Phone: 8285558855
                   </a>
                 </li>
                 <li>
-                  <a href="mailto:contact@lawfirm.com" className="hover:text-amber-400 transition-colors">
-                    Email: contact@lawfirm.com
+                  <a href="mailto:adv.naveengarg1993@gmail.com" className="hover:text-amber-400 transition-colors">
+                    Email: adv.naveengarg1993@gmail.com
                   </a>
                 </li>
               </ul>
@@ -373,7 +368,7 @@ export default function AboutPage() {
           </div>
 
           <div className="border-t border-slate-800 pt-8 text-center text-slate-400 text-sm font-['Inter']">
-            <p>&copy; 2025 Sterling & Associates. All rights reserved.</p>
+            <p>&copy; 2025 Naveen Kumar Garg And Associates . All rights reserved.</p>
           </div>
         </div>
       </footer>

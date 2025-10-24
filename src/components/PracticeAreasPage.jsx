@@ -198,9 +198,7 @@ const  PracticeAreasPage = ()=> {
             <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
               <div>
                 <h2 className="text-lg sm:text-xl font-semibold text-slate-900">Need clarity on a legal issue?</h2>
-                <p className="text-slate-700 text-sm sm:text-base mt-1">
-                  Write to us at <a href="mailto:contact@goyaladvocate.com" className="font-medium underline decoration-amber-400 underline-offset-4">contact@goyaladvocate.com</a> — we usually respond within 1 business day.
-                </p>
+                
               </div>
               <a
                 href="mailto:adv.naveengarg1993@gmail.com"
