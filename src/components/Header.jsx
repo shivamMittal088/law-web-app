@@ -48,7 +48,7 @@ const Header = () => {
           <div>
             <h1 className="text-base sm:text-lg font-bold">Naveen Kumar Garg & Associates</h1>
             <p className="text-[11px] text-slate-400">Advocates | Solicitors | Legal Consultants</p>
-            <p className="text-[11px] text-slate-400">Delhi High Court & District Courts</p>
+            <p className="text-[11px] text-slate-400">Delhi High Court & All District Courts</p>
           </div>
         </div>
 
