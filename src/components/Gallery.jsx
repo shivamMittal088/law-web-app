@@ -22,7 +22,7 @@ const Gallery = () => {
   // console.log({ img1, img2, img3 });
 
   return (
-    <section className="py-16 bg-slate-50">
+    <section className="py-8 bg-slate-50">
       <div className="max-w-6xl mx-auto px-3 sm:px-6 lg:px-8">
         <div className="text-center mb-8">
           <div className="inline-flex items-center justify-center mb-2">

@@ -5,15 +5,15 @@ import { Link } from "react-router-dom";
 const TESTIMONIALS = [
   {
     name: "Amrita.",
-    role: "Small Business Owner",
+    // role: "Small Business Owner",
     quote:
-      "Sterling & Associates guided us through a complex dispute with clarity and care. Their preparation and communication were outstanding.",
+      "Naveen Kumar garg & associates guided us through a complex dispute with clarity and care. Their preparation and communication were outstanding.",
     rating: 5,
     img: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=256&auto=format&fit=crop",
   },
   {
     name: "Priya.",
-    role: "Tech Founder",
+    // role: "Tech Founder",
     quote:
       "Measured, strategic, and effective. The team protected our interests during a high-stakes negotiation and delivered a great outcome.",
     rating: 4.3,
@@ -21,7 +21,7 @@ const TESTIMONIALS = [
   },
   {
     name: "Anamika.",
-    role: "Marketing Director",
+    // role: "Marketing Director",
     quote:
       "Compassionate counsel and clear guidance at every step. I felt supported and informed throughout the entire process.",
     rating: 4.7,
@@ -31,7 +31,7 @@ const TESTIMONIALS = [
 
 const TestimonialsSection = ()=> {
   return (
-    <section id="testimonials" className="py-12 bg-white dark:bg-slate-950">
+    <section id="testimonials" className="py-4 bg-white dark:bg-slate-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-8">

@@ -138,13 +138,10 @@ export default function AboutPage() {
 
       {/* Page Title Banner */}
       <section className="bg-gradient-to-r from-slate-200 to-slate-300 text-slate-900 dark:from-slate-800 dark:to-slate-900 dark:text-white py-12">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-3xl lg:text-4xl font-['Playfair_Display'] font-extrabold mb-3 leading-tight">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl lg:text-4xl font-['Playfair_Display'] font-extrabold mb-3 leading-tight">
             About Our Firm
           </h3>
-          <p className="text-lg sm:text-xl text-slate-700 dark:text-slate-300 font-['Inter']">
-            Dedicated to excellence in legal representation since 1985
-          </p>
         </div>
       </section>
 
@@ -312,17 +309,6 @@ export default function AboutPage() {
             >
               Schedule Consultation
             </Link>
-
-
-            {/* <a
-              href="tel:+1234567890"
-              className="inline-flex justify-center items-center rounded-xl px-7 py-3.5 font-semibold
-                         bg-white/90 text-slate-900 hover:bg-white transition-all backdrop-blur
-                         border border-white/60 shadow-[0_10px_24px_-10px_rgba(0,0,0,0.25)]
-                         hover:-translate-y-0.5 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-white/60"
-            >
-              Call Us Now
-            </a> */}
 
 
           </div>

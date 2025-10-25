@@ -36,7 +36,7 @@ const ATTORNEYS = [
 
 const AttorneysSection = () => {
   return (
-    <section id="attorneys" className="py-16 bg-slate-900 dark:bg-slate-950">
+    <section id="attorneys" className="py-8 bg-slate-900 dark:bg-slate-950">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center mb-10">

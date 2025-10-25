@@ -86,6 +86,7 @@ const LocationPage = () => {
               <div>
                 <h4 className="font-semibold text-slate-900 text-sm">Phone</h4>
                 <p className="text-slate-600 text-xs mt-1">+91 8285558855</p>
+                <p className="text-slate-600 text-xs mt-1">+91 9911198213</p>
               </div>
             </div>
 

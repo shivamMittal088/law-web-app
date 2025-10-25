@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <div>
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-16 lg:py-24">
+      <section className="relative bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 text-white py-12 lg:py-4">
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40"></div>
 
@@ -15,12 +15,9 @@ const Hero = () => {
             {/* Left content */}
             <div className="space-y-5">
               <div className="inline-block">
-                <span className="bg-amber-500 text-slate-900 px-3 py-1 rounded-full text-xs font-medium tracking-wide">
-                  Trusted Legal Experts Since 1985
-                </span>
               </div>
 
-              <h2 className="text-xl md:text-2xl lg:text-3xl font-bold leading-snug tracking-tight">
+              <h2 className="text-xl md:text-2xl lg:text-2xl font-bold leading-snug tracking-tight">
                 Defending Your Rights with Excellence
               </h2>
 

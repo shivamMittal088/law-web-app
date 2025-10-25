@@ -19,9 +19,6 @@ const PrivacyPolicy = () => {
               Privacy Policy & Terms of Service
             </h1>
           </div>
-          <p className="text-sm text-slate-600">
-            Effective Date: {new Date().getFullYear()}
-          </p>
         </div>
 
         {/* Privacy Policy Section */}
@@ -37,14 +34,6 @@ const PrivacyPolicy = () => {
             explains how we collect, use, and protect your data when you interact with our website.
           </p>
 
-          <h3 className="font-semibold text-slate-900 mt-6 mb-2">1. Information We Collect</h3>
-          <p className="text-slate-700 mb-4">
-            We may collect your name, email address, phone number, and case details when you
-            fill out the consultation form or contact us via the website. We do not collect
-            any unnecessary or sensitive information.
-          </p>
-
-          <h3 className="font-semibold text-slate-900 mt-6 mb-2">2. How We Use Your Information</h3>
           <p className="text-slate-700 mb-4">
             Your information is used solely to respond to your inquiries, provide legal consultation,
             and improve our website services. We do not share your data with third parties unless
@@ -115,9 +104,9 @@ const PrivacyPolicy = () => {
             If you have any questions regarding our Privacy Policy or Terms of Service,
             please contact us at:  
             <br />
-            <span className="font-semibold">Email:</span> info@advnaveengarg.com  
+            <span className="font-semibold">Email:</span> adv.naveengarg1993@gmail.com  
             <br />
-            <span className="font-semibold">Phone:</span> +91 98765 43210
+            <span className="font-semibold">Phone:</span> +91 8285558855
           </p>
         </div>
       </div>

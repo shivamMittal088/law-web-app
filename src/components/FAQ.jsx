@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     q: "What areas of law do you practice?",
-    a: "Criminal defense, family law, corporate/business, real estate, personal injury, IP, immigration, and more.",
+    a: "You can find a full list of our practice areas on the Practice Areas page, covering litigation, compliance, registrations, and advisory services.",
   },
   {
     q: "How are your fees structured?",
@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     q: "Do you handle urgent matters after hours?",
-    a: "Yes. Our team monitors emergencies 24/7. Call the main number for immediate assistance.",
+    a: "Yes. Our team monitors emergencies . Call the main number for immediate assistance.",
   },
   {
     q: "Will my information be kept confidential?",
