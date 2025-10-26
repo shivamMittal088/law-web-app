@@ -32,7 +32,7 @@ export default function ConsultationPage() {
       addressLines: [
         "Chamber no - 347A",
         "first floor , Western Wing Tis Hazari court",
-        "delhi -110055",
+        "delhi -110054",
       ],
       phone: "+91 9911198213",
     },

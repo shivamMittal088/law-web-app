@@ -75,7 +75,7 @@ const LocationPage = () => {
                 </p>
                 <h4 className="font-semibold text-slate-900 text-sm mt-3">Alternate Office :-</h4>
                 <p className="text-slate-600 text-xs mt-1">
-                  Chamber no - 347A first floor , Western Wing Tis Hazari court delhi -110055
+                  Chamber no - 347A first floor , Western Wing Tis Hazari court delhi -110054
                 </p>
               </div>
             </div>
